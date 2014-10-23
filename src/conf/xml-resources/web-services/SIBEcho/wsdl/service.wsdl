@@ -1,0 +1,28 @@
+<definitions
+        xmlns="http://schemas.xmlsoap.org/wsdl/"
+        xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+        xmlns:port="http://com.security/port"
+        targetNamespace="http://com.security/service"
+        xmlns:tn="http://com.security/service"        
+>
+    
+    <import namespace="http://com.security/port" location="port.wsdl"/>
+
+    <binding name="EchoBinding" type="port:EchoPort">
+        <soap:binding transport="http://schemas.xmlsoap.org/wsdl/http" style="document"/>
+         <operation name="Echo">
+             <input name="Echo">
+                 <soap:body use="literal"/>
+             </input>
+             <output name="EchoResponse">
+                 <soap:body use="literal"/>
+             </output>
+         </operation>
+    </binding>
+    
+    <service name="EchoService">
+        <port name="EchoBindingPort" binding="tn:EchoBinding">
+            <soap:address location="http://localhost:7878/echo"/>
+        </port>
+    </service>
+</definitions>

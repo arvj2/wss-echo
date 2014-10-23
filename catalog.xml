@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/D:/netbeans-jaxws/wss-echo/src/java/com/security/contracts/service.wsdl" uri="src/conf/xml-resources/web-services/SIBEcho/wsdl/service.wsdl"/>
+    <system systemId="file:/D:/netbeans-jaxws/wss-echo/src/java/com/security/contracts/port.wsdl" uri="src/conf/xml-resources/web-services/SIBEcho/wsdl/port.wsdl"/>
+    <system systemId="file:/D:/netbeans-jaxws/wss-echo/src/java/com/security/contracts/types.xsd" uri="src/conf/xml-resources/web-services/SIBEcho/wsdl/types.xsd"/>
+    <system systemId="http://localhost:8080/wss-echo/EchoService?wsdl" uri="src/conf/xml-resources/web-service-references/EchoService/wsdl/localhost_8080/wss-echo/EchoService.wsdl"/>
+    <system systemId="http://localhost:8080/wss-echo/EchoService?wsdl=1" uri="src/conf/xml-resources/web-service-references/EchoService/wsdl/localhost_8080/wss-echo/EchoService.wsdl_1.wsdl"/>
+    <system systemId="http://localhost:8080/wss-echo/EchoService?xsd=1" uri="src/conf/xml-resources/web-service-references/EchoService/wsdl/localhost_8080/wss-echo/EchoService.xsd_1.xsd"/>
+</catalog>

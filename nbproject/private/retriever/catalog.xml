@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://schemas.xmlsoap.org/" uri="schemas.xmlsoap.org/index.xml"/>
+    <system systemId="http://schemas.xmlsoap.org/wsdl/" uri="schemas.xmlsoap.org/wsdl/index.xsd"/>
+    <system systemId="http://schemas.xmlsoap.org/wsdl" uri="schemas.xmlsoap.org/wsdl/index.xsd"/>
+    <system systemId="http://schemas.xmlsoap.org/wsdl/soap" uri="schemas.xmlsoap.org/wsdl/soap/index.xsd"/>
+    <system systemId="http://schemas.xmlsoap.org/wsdl/soap/" uri="schemas.xmlsoap.org/wsdl/soap/index.xsd"/>
+    <system systemId="http://www" uri="www"/>
+    <system systemId="http://www.w3.org/2005/" uri="www.w3.org/2005/index"/>
+    <system systemId="http://www.w3.org/2005/07" uri="www.w3.org/2005/07"/>
+    <system systemId="http://www.w3.org/" uri="www.w3.org/index.xml"/>
+    <system systemId="http://java.sun.com" uri="www.oracle.com/technetwork/java/index.html"/>
+    <system systemId="http://java.sun.com/" uri="www.oracle.com/technetwork/java/index.html"/>
+</catalog>

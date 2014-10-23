@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.3 (tags/2.3-7528; 2013-04-29T19:34:10+0000) JAXWS-RI/2.2.8 JAXWS/2.2 svn-revision#unknown. --><definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:wsam="http://www.w3.org/2005/07/addressing/metadata" xmlns:tn="http://com.security/port" xmlns:types="http://com.security/types" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://com.security/port">
+    
+    <types>
+        <xs:schema>
+            <xs:import namespace="http://com.security/types" schemaLocation="http://localhost:8080/wss-echo/EchoService?xsd=1"/>
+        </xs:schema> 
+    </types>
+    
+    <message name="Echo">
+       <part name="echoed" element="types:Echo"/>
+    </message>
+    
+    
+    <message name="EchoResponse">
+       <part name="value" element="types:EchoResponse"/>
+    </message>    
+    
+    <portType name="EchoPort">
+        <operation name="Echo">
+            <input message="tn:Echo" wsam:Action="http://com.security/port/EchoRequest"/>              
+            <output message="tn:EchoResponse" wsam:Action="http://com.security/port/EchoResponse"/>
+        </operation>
+    </portType>
+    
+</definitions>
