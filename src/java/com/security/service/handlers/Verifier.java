@@ -20,7 +20,7 @@ import javax.xml.ws.handler.soap.SOAPMessageContext;
 public class Verifier implements SOAPHandler<SOAPMessageContext> {
 
     private XWSSProcessor proc;
-    private boolean trace = false;
+    private boolean trace = true;
 
     public Verifier() {
         try {
@@ -54,6 +54,8 @@ public class Verifier implements SOAPHandler<SOAPMessageContext> {
                 SOAPMessage verified = proc.verifyInboundMessage(pcxt);
                 context.setMessage(verified);
                 if (trace) {
+                    
+                    System.out.println("-----------------------");
                     dump(verified);
                 }
             } catch (Exception ex) {
